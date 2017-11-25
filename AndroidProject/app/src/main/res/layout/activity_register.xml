@@ -18,7 +18,8 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <RelativeLayout
+    <LinearLayout
+        android:orientation="vertical"
         android:id="@+id/rl_register_main_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -29,7 +30,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/btn_to_login"
-            android:layout_below="@id/v_separator"
             android:layout_alignRight="@id/input_name"
             android:layout_marginTop="12dp"
             android:textColor="@color/colorPrimary"
@@ -46,7 +46,7 @@
             android:layout_marginRight="36dp"
             android:layout_marginTop="0dp"
             android:textColorHint="@color/colorPrimary"
-            android:layout_below="@id/btn_to_login">
+           >
 
 
             <EditText
@@ -65,7 +65,6 @@
             android:layout_marginLeft="36dp"
             android:layout_marginRight="36dp"
             android:layout_marginTop="10dp"
-            android:layout_below="@id/input_name"
             android:textColorHint="@color/colorPrimary">
             <EditText
                 android:id="@+id/et_phone"
@@ -83,7 +82,6 @@
         android:layout_marginLeft="36dp"
         android:layout_marginRight="36dp"
         android:layout_marginTop="10dp"
-        android:layout_below="@id/input_phone"
         android:textColorHint="@color/colorPrimary">
         <EditText
             android:id="@+id/et_email"
@@ -101,7 +99,6 @@
             android:layout_marginLeft="36dp"
             android:layout_marginRight="36dp"
             android:layout_marginTop="10dp"
-            android:layout_below="@id/input_email"
             android:textColorHint="@color/colorPrimary">
 
             <EditText
@@ -122,7 +119,6 @@
             android:layout_marginLeft="36dp"
             android:layout_marginRight="36dp"
             android:layout_marginTop="10dp"
-            android:layout_below="@id/input_password"
             android:textColorHint="@color/colorPrimary">
 
             <EditText
@@ -141,7 +137,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_below="@id/input_confirm_password"
             android:layout_marginLeft="36dp"
             android:layout_marginRight="36dp"
             android:layout_marginTop="10dp"
@@ -169,7 +164,6 @@
             android:layout_marginLeft="36dp"
             android:layout_marginRight="36dp"
             android:layout_marginTop="10dp"
-            android:layout_below="@id/radio_gender"
             android:textColorHint="@color/colorPrimary">
 
             <EditText
@@ -197,7 +191,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Register"
-            android:layout_below="@id/checkbox_at_home"
             android:layout_marginLeft="36dp"
             android:layout_marginRight="36dp"
             android:layout_marginTop="10dp"
@@ -205,6 +198,6 @@
             android:textColor="@color/white_full"
             android:textAllCaps="false"
             android:foreground="@drawable/ripple_white"
-            />    </RelativeLayout>
+            />    </LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>

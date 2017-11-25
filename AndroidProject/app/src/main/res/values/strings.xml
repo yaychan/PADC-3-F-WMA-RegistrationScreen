@@ -4,5 +4,5 @@
     <string name="lbl_click_me">Click Me</string>
     <string name="btn_forgot_password"><i><u>Forgot Password</u></i></string>
     <string name="btn_to_register"><i><u>New Seller? Register</u></i></string>
-    <string name="btn_to_login"><i><u>To Login</u></i></string>
+    <string name="btn_to_login"><i><u>Already have account?</u></i></string>
 </resources>
