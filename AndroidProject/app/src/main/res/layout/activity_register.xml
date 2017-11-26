@@ -17,13 +17,16 @@
             app:title="Register"/>
 
     </android.support.design.widget.AppBarLayout>
-
+    <ScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <LinearLayout
         android:orientation="vertical"
         android:id="@+id/rl_register_main_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        >
 
         <TextView
             android:id="@+id/btn_to_login"
@@ -36,6 +39,7 @@
             android:foreground="@drawable/ripple_primary"
             android:clickable="true"
             android:padding="8dp"
+            android:layout_gravity="right"
             />
 
         <android.support.design.widget.TextInputLayout
@@ -198,6 +202,8 @@
             android:textColor="@color/white_full"
             android:textAllCaps="false"
             android:foreground="@drawable/ripple_white"
-            />    </LinearLayout>
+            />
+    </LinearLayout>
+    </ScrollView>
 
 </android.support.design.widget.CoordinatorLayout>
